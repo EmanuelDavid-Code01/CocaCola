@@ -1,35 +1,4 @@
-@media(max-width: 767px)
-{
-    body{
-        font-size: 15px;
-    };
-    header .container nav{
-        position:fixed;
-        width: 100%;
-        background-color:white;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        padding-left: 15px;
-        padding-right: 15px;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        transition: all 0.4s ease;
-        transform: translateX(100%);
-    }
-    header .container nav{
-        font-size: 30px;
-        margin: 15px 0;
 
-    }
-    header .container .hamb
-    {
-        display: block;
-        font-size: 40px;
-        color: red;
-    }
-}
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -71,6 +40,11 @@ header .container nav a
     color: red;
     text-decoration: none;
     margin: 0 15px;
+}
+/* esto es para que el menu hamburguesa no se vea en desktop */
+header .container .hamb{
+display:none;
+/* para que no se vea */
 }
 .boton{
     text-align: center;
@@ -135,6 +109,7 @@ header .container nav a
 .row{
     display: flex;
     /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
 }
@@ -346,5 +321,92 @@ footer a{
     text-decoration: none;
 }
 footer ul.redes{
-    font-size: 40px;
+    font-size: 30px;
+    display: flex;
+    /* justify-content: space-between; diferentes modelos de las redes */
+}
+footer .redes a
+{
+margin: 0 7.5px;
+}
+
+
+
+
+@media(max-width: 767px)
+/* Lo que estoy diciendo arriba es Hasta 767px de tamaño va a aplicar solo hasta estos dispositivos con este ancho determinado */
+/* 767px es el tamaño maximo que puede tener un celular 
+768px ya es tamaño de tablet*/
+{
+    body{
+        font-size: 15px;
+    };
+    header .container{
+        width: 100%;
+    }
+    header .container nav{
+        position:fixed;
+        width: 100%;
+        background-color:white;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 15px;
+        padding-right: 15px;
+        top: 0;
+        left: 0;
+        display: flex;
+        /* flex direction por defecto es en fila pero lo podemos usar en columna */
+        flex-direction: column;
+        /* hay diferentes tipos de trnsition */
+        transition: all 0.4s ease;
+        /* se translada en base al eje x por fuera del viwport */
+        transform: translateX(100%);
+    }
+    header .container nav{
+        font-size: 30px;
+        margin: 15px 0;
+
+    }
+    header .container .hamb
+    {
+        display: block;
+        font-size: 40px;
+        color: red;
+    }
+    #servicios .container row{
+        display: flex;
+        flex-wrap: wrap !important;
+    }
+    #servicios .bloque-servicio{
+        margin-bottom: 15px;
+    }
+    #servicios .cuadrado-bueno{
+        padding-bottom: 400px;
+    }
+    .container {
+        width: 100%;
+        
+    }
+    .columna-monile-100{
+        width: 100%;
+
+    }
+    .columna-monile-50{
+        width: 50%;
+    }
+    #inicio{
+        height: 100vh;
+    }
+    #inicio img{
+        height: 100%;
+        /* para que las imagenes tomen toda la pantlla  */
+        object-fit: cover;
+        object-position: center;
+    }
+    #contactenos iframe{
+        position: relative;
+    }
+    #contactenos{
+        padding: 0;
+    }
 }
