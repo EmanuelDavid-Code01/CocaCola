@@ -323,7 +323,7 @@ footer a{
 footer ul.redes{
     font-size: 30px;
     display: flex;
-    /* justify-content: space-between; diferentes modelos de las redes */
+    justify-content: center; diferentes modelos de las redes
 }
 footer .redes a
 {
@@ -364,6 +364,11 @@ margin: 0 7.5px;
         /* se translada en base al eje x por fuera del viwport */
         transform: translateX(100%);
     }
+    /* modificaciones para el menu hamburguesa */
+    header .container nav.open{
+
+        transform: translateX(0);
+    }
     header .container nav{
         
         font-size: 30px;
@@ -371,7 +376,9 @@ margin: 0 7.5px;
 
     }
     header .container .hamb
+    /* le ponemos un position relative cuando ya dimos los comandos al jQuery para el hamb para que vuelva a aparecer el menu hamb */
     {
+        position: relative;
         display: block;
         font-size: 40px;
         color: red;
@@ -382,7 +389,21 @@ margin: 0 7.5px;
     padding-right: 0px; 
 
     }
-    
+    form .boton.boton-negro{
+        width: 100%;
+    }
+    footer{
+        text-align: center;
+    }
+    footer .logo-footer{
+        /* de esta forma achicamos la imagen, del footer, y la dejamos centrada */
+        width: 50%;
+    }
+    footer ul .redes{
+
+    justify-content: center;
+
+    }
     #servicios .container row{
         display: flex;
         flex-wrap: wrap !important;
