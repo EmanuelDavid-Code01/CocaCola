@@ -320,10 +320,11 @@ footer a{
     color: white;
     text-decoration: none;
 }
+/* diferentes modelos de las redes */
 footer ul.redes{
     font-size: 30px;
     display: flex;
-    justify-content: center; diferentes modelos de las redes
+    justify-content: center; 
 }
 footer .redes a
 {
@@ -375,8 +376,9 @@ margin: 0 7.5px;
         margin: 15px 0;
 
     }
-    header .container .hamb
     /* le ponemos un position relative cuando ya dimos los comandos al jQuery para el hamb para que vuelva a aparecer el menu hamb */
+
+    header .container .hamb
     {
         position: relative;
         display: block;
@@ -395,8 +397,9 @@ margin: 0 7.5px;
     footer{
         text-align: center;
     }
+     /* de esta forma achicamos la imagen, del footer, y la dejamos centrada */
     footer .logo-footer{
-        /* de esta forma achicamos la imagen, del footer, y la dejamos centrada */
+       
         width: 50%;
     }
     footer ul .redes{
