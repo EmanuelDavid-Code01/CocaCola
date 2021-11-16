@@ -29,7 +29,7 @@ jQuery("header .container nav a").click(function(){
    var Nue = jQuery(this).attr("href");
 
     jQuery("html, body").animate({
-        "scrollTop": jQuery(Nue).offset().top
+        "scrollTop": jQuery(Nue).offset().top -76
     })
 })
 }
